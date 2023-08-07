@@ -1,0 +1,15 @@
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+div {
+  text-align: center;
+}
+footer {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 340px;
+  color: #ffebcd;
+}

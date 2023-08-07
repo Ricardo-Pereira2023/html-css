@@ -1,0 +1,4 @@
+Desafio das Imagens
+
+Crie agora uma página que tenha duas imagens: 
+uma no conteúdo da página e um ícone de favoritos.

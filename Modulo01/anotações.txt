@@ -1,0 +1,20 @@
+CSS
+
+No CSS temos SELETORES. Ex:
+H1 (O H1 é um tipo de seletor) {
+
+}
+
+Dentro dos seletores nos temos a(s) DECLARAÇÃO(ÕES). Ex:
+H1 (O H1 é um tipo de seletor) {
+  font-family: Arial; - Declaração
+  font-size: 20pt; - Declaração
+  color: blue; - Declaração
+}
+
+Cada declaração possui um par de PROPRIEDADE(S) E VALOR(ES). Ex:
+H1 {
+  font-family:(PROPRIEDADE) Arial (VALOR);
+  font-size:(PROPRIEDADE) 20pt(VALOR);
+  color:(PROPRIEDADE) blue(VALOR);
+}

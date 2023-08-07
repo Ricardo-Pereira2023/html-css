@@ -1,0 +1,4 @@
+Desafio das Mensagens
+
+Olá, tudo bem? Vamos começar nos exercícios com algo bem simples: exibir textos com uma mistura de parágrafos e quebra de linhas.
+Você deve criar um código HTML que use apenas parágrafos e quebra de linhas.

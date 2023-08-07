@@ -1,0 +1,59 @@
+TIPOS DE CAIXA:
+
+Box-level
+Uma caixa do tipo box-level incia em uma linha nova, ocupa a largura (width) em 100% da tela (viewport) e vai pular para próxima linha antes de continuar o conteúdo.
+
+Exemplos de tags que são box-level:
+
+<div>
+<h1>-<h6> - título
+<p> - parágrafo
+<main> - conteúdo principal
+<header> - cabeçalho
+<nav> - menus
+<article> - artigo
+<aside> - conteúdo lateral
+<footer> - rodapé
+<form> - formulário
+<video> - inserir videos
+
+
+Inline-level
+Uma caixa do tipo inline-level ele não irá pular para próxima linha, a caixa será do tamanho do conteúdo (não ocupa a largura inteira) e ao terminar ele não quebrará uma linha e continuará na mesma.
+Uma tag <span> é um exemplo de inline-level.
+
+Exemplos de tags que são inline-level:
+
+<span>
+<a> - links
+<code> - inserir linhas de códigos
+<small> - formatação letra pequena
+<strong> - formatação em negrito
+<em> - formatação em itálico
+<sup>-<sub> - sobrescrito/subscrito
+<label>
+<button> - botão no formulário
+<input>
+<select>
+
+
+MODELOS DE CAIXA:
+
+Conteúdo principal;
+
+Largura da caixa (width);
+
+Altura da caixa (height);
+
+Uma linha em volta do conteúdo chamada de borda (border);
+
+Dentro da borda (border) temos um espaço interno chamado de preenchimento (padding);
+
+Fora da borda (border) temos um espaço externo chamado de margem (margin);
+
+Dentro da margem (margin) e fora da borda (border) há um outro tracejado chamado de 
+contorno/traçado (outline);
+
+A borda (border) ela é dentro do elemento e o traçado/contorno (outline) ele é fora do elemento;
+
+
