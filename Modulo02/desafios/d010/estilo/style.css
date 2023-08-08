@@ -29,7 +29,8 @@ body {
   font-family: var(--fonte-padrao);
 }
 a.externo::after {
-  content: "\00A0\1F517";
+  content: "\1F517";
+  /* \00A0 */
 }
 header {
   background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
@@ -53,7 +54,7 @@ header > p {
   padding-right: 10px;
   padding-left: 10px;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
 }
 nav {
