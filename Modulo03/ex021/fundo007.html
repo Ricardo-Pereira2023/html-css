@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alinhamento Vertical</title>
+  <style>
+    section#container {
+      background-image: url('imagens/target001.png');
+      background-size: 100% 100%; /* Deixa a imagem com 100% do tamanho */
+
+      position: relative; /* O container sempre na position relative */
+      height: 97vh; /* vh = ViewPort Height (tamanho total da tela) */
+      padding: 10px;
+      background-color: purple;
+    }
+    article#conteudo {
+      background-image: url('imagens/target001.png');
+      background-size: 100% 100%; /* Deixa a imagem com 100% do tamanho */
+
+      position: absolute; /* O conteudo sempre na position absolute */
+      height: 200px;
+      width: 400px;
+      background-color: yellow;
+      left: 50%;
+      top: 50%;
+      /* 
+      Ao definir a position como absolute, as propriedades left, right, top, bottom podem ser usadas,
+      para mover o conteúdo. 
+      */
+      transform: translate(-50%, -50%);
+      /*  
+      Quando o translate for positivo no primeiro valor (50%) o conteúdo se moverá para direita. 
+      Quando o translate for positivo no segundo valor (50%) o conteúdo se moverá para baixo.
+      Quando o translate for negativo no primeiro valor (-50%) o conteúdo se moverá para esquerda.
+      Quando o translate for negativo no segundo valor (-50%) o conteúdo se moverá para cima.
+      */ 
+    }
+  </style>
+</head>
+<body>
+  <section id="container">
+    <article id="conteudo">
+
+    </article>
+  </section>
+</body>
+</html>
