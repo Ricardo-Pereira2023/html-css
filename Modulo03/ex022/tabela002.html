@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de unidades federativas do Brasil por população</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: linear-gradient(to bottom, #081A61, #4061E6, #123BE0);
+    }
+
+    body > p {
+      text-align: left;
+      width: 800px;
+      margin: auto;
+      padding: 10px 0px 10px 0px;
+      color: black;
+      font-size: 1.2em;
+    }
+
+    body > p > a {
+      color: #4061E6;
+      text-decoration: none;
+    }
+
+    body > p > a:hover {
+      text-decoration: underline;
+    }
+
+    table {
+      width: 800px;
+      border-collapse: collapse;
+      position: relative;
+      margin: auto;
+    }
+
+    th.pos, th.tot {
+      width: 0px;
+    }
+
+    th.est {
+      width: 150px;
+    }
+
+    th.pop {
+      width: 0px;
+    }
+
+    td, th {
+      border: 1px solid black;
+      padding: 10px;
+    }
+    
+    caption {
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 10px;
+      background-color: #4061E6;
+    }
+
+    thead > tr > th {
+      position: sticky;
+      top: -1px;
+      background-color: #4061E6;
+    }
+
+    td.num {
+      text-align: right;
+      color: #FAFFF7;
+    }
+    
+    td.center {
+      text-align: center;
+    }
+
+    td > a {
+      text-decoration: none;
+      color: white;
+    }
+
+    td > a:hover {
+      text-decoration: underline;
+    }
+
+    thead, tfoot {
+      background-color: #4061E6;
+      color: black;
+    }
+    /* Efeito Zebrado */
+    tbody > tr:nth-child(even) { /* Pode usar odd (ímpar) ou even (par) */
+      background-color: #081A61;
+      color: #FAFFF7;
+    }
+    /* Efeito Zebrado */
+    tbody > tr:nth-child(odd) {
+      background-color: #0E2EAD;
+      color: #FAFFF7;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <!-- 
+    ANATOMIA PARA TABELAS GRANDES
+    TABLE
+      CAPTION
+      THEAD
+        TR, TD, TH
+      TBODY
+        TR, TD, TH
+      TFOOT
+        TR, TD, TH 
+  -->
+
+  <p class="text">
+    Esta é uma lista da <strong>população das unidades federativas</strong> 
+    <a
+     href="https://pt.wikipedia.org/wiki/Brasil" target="_blank" rel="next">brasileiras
+    </a>
+    segundo dados divulgados pelo 
+    <a 
+    href="https://pt.wikipedia.org/wiki/Instituto_Brasileiro_de_Geografia_e_Estat%C3%ADstica" target="_blank" rel="next">Instituto Brasileiro de Geografia e Estatística
+    </a> 
+    (IBGE) em 28 de junho de 2023, com base no 
+    <a 
+    href="https://pt.wikipedia.org/wiki/Censo_demogr%C3%A1fico_do_Brasil_de_2022" target="_blank" rel="next">Censo de 2022.
+    </a>
+  </p>
+
+  <table>
+    <caption>
+      População das Unidades Federativas
+    </caption>
+    <thead>
+      <tr>
+        <th class="pos" scope="col">Posição</th>
+        <th class="est" scope="col">Estado</th>
+        <th class="pop" scope="col">População</th>
+        <th class="tot" scope="col">% da pop. total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="center">1</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/22px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" 
+          alt="Bandeira do Estado de São Paulo">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo_(estado)" 
+          title="São Paulo" 
+          target="_blank" 
+          rel="next">São Paulo
+          </a>
+        </td>
+        <td class="num">44.420.459</td>
+        <td class="center">21,88%</td>
+      </tr>
+
+      <tr>
+        <td class="center">2</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bandeira_de_Minas_Gerais.svg/20px-Bandeira_de_Minas_Gerais.svg.png" 
+          alt="Bandeira do Estado de Minas Gerais">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Minas_Gerais" 
+          title="Minas Gerais" 
+          target="_blank" 
+          rel="next">Minas Gerais
+          </a>
+        </td>
+        <td class="num">20.538.718</td>
+        <td class="center">10,11%</td>
+      </tr>
+
+      <tr>
+        <td class="center">3</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg/20px-Bandeira_do_estado_do_Rio_de_Janeiro.svg.png" 
+          alt="Bandeira do Estado do Rio de Janeiro">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro_(estado)" 
+          title="Rio de Janeiro" 
+          target="_blank" 
+          rel="next">Rio de Janeiro
+          </a>
+        </td>
+        <td class="num">16.054.524</td>
+        <td class="center">7,91%</td>
+      </tr>
+
+      <tr>
+        <td class="center">4</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bandeira_da_Bahia.svg/20px-Bandeira_da_Bahia.svg.png" 
+          alt="Bandeira do Estado da Bahia">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Bahia" 
+          title="Bahia" 
+          target="_blank" 
+          rel="next">Bahia
+          </a>
+        </td>
+        <td class="num">14.136.417</td>
+        <td class="center">6,96%</td>
+      </tr>
+
+      <tr>
+        <td class="center">5</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/9/93/Bandeira_do_Paran%C3%A1.svg/20px-Bandeira_do_Paran%C3%A1.svg.png" 
+          alt="Bandeira do Estado do Paraná">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Paran%C3%A1" 
+          title="Paraná" 
+          target="_blank" 
+          rel="next">Paraná
+          </a>
+        </td>
+        <td class="num">11.443.208</td>
+        <td class="center">5,64%</td>
+      </tr>
+
+      <tr>
+        <td class="center">6</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/6/63/Bandeira_do_Rio_Grande_do_Sul.svg/20px-Bandeira_do_Rio_Grande_do_Sul.svg.png" 
+          alt="Bandeira do Estado do Rio Grande do Sul">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul" 
+          title="Rio Grande do Sul" 
+          target="_blank" 
+          rel="next">Rio Grande do Sul
+          </a>
+        </td>
+        <td class="num">10.880.506</td>
+        <td class="center">5,36%</td>
+      </tr>
+
+      <tr>
+        <td class="center">7</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/5/59/Bandeira_de_Pernambuco.svg/20px-Bandeira_de_Pernambuco.svg.png" 
+          alt="Bandeira do Estado de Pernambuco">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Pernambuco" 
+          title="Pernambuco" 
+          target="_blank" 
+          rel="next">Pernambuco
+          </a>
+        </td>
+        <td class="num">9.058.155</td>
+        <td class="center">4,46%</td>
+      </tr>
+
+      <tr>
+        <td class="center">8</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bandeira_do_Cear%C3%A1.svg/20px-Bandeira_do_Cear%C3%A1.svg.png" 
+          alt="Bandeira do Estado do Ceará">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Cear%C3%A1" 
+          title="Ceará" 
+          target="_blank" 
+          rel="next">Ceará
+          </a>
+        </td>
+        <td class="num">8.791.688</td>
+        <td class="center">4,33%</td>
+      </tr>
+
+      <tr>
+        <td class="center">9</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bandeira_do_Par%C3%A1.svg/20px-Bandeira_do_Par%C3%A1.svg.png" 
+          alt="Bandeira do Estado do Pará">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Par%C3%A1" 
+          title="Pará" 
+          target="_blank" 
+          rel="next">Pará
+          </a>
+        </td>
+        <td class="num">8.116.132</td>
+        <td class="center">4,10%</td>
+      </tr>
+
+      <tr>
+        <td class="center">10</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bandeira_de_Santa_Catarina.svg/20px-Bandeira_de_Santa_Catarina.svg.png" 
+          alt="Bandeira do Estado de Santa Catarina">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Santa_Catarina" 
+          title="Santa Catarina" 
+          target="_blank" 
+          rel="next">Santa Catarina
+          </a>
+        </td>
+        <td class="num">7.609.601</td>
+        <td class="center">3,75%</td>
+      </tr>
+
+      <tr>
+        <td class="center">11</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Goi%C3%A1s.svg/20px-Flag_of_Goi%C3%A1s.svg.png" 
+          alt="Bandeira do Estado de Goiás">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Goi%C3%A1s" 
+          title="Goiás" 
+          target="_blank" 
+          rel="next">Goiás
+          </a>
+        </td>
+        <td class="num">7.055.228</td>
+        <td class="center">3,47%</td>
+      </tr>
+
+      <tr>
+        <td class="center">12</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/4/45/Bandeira_do_Maranh%C3%A3o.svg/20px-Bandeira_do_Maranh%C3%A3o.svg.png" 
+          alt="Bandeira do Estado do Maranhão">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Maranh%C3%A3o" 
+          title="Maranhão" 
+          target="_blank" 
+          rel="next">Maranhão
+          </a>
+        </td>
+        <td class="num">6.775.152</td>
+        <td class="center">3,34%</td>
+      </tr>
+
+      <tr>
+        <td class="center">13</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Bandeira_da_Para%C3%ADba.svg/20px-Bandeira_da_Para%C3%ADba.svg.png" 
+          alt="Bandeira do Estado do Maranhão">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Para%C3%ADba" 
+          title="Paraíba" 
+          target="_blank" 
+          rel="next">Paraíba
+          </a>
+        </td>
+        <td class="num">3.974.495</td>
+        <td class="center">1,96%</td>
+      </tr>
+      <tr>
+        <td class="center">14</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bandeira_do_Amazonas.svg/20px-Bandeira_do_Amazonas.svg.png" 
+          alt="Bandeira do Estado de Amazonas">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Amazonas" 
+          title="Amazonas" 
+          target="_blank" 
+          rel="next">Amazonas
+          </a>
+        </td>
+        <td class="num">3.941.175</td>
+        <td class="center">1,94%</td>
+      </tr>
+      <tr>
+        <td class="center">15</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/4/43/Bandeira_do_Esp%C3%ADrito_Santo.svg/20px-Bandeira_do_Esp%C3%ADrito_Santo.svg.png" 
+          alt="Bandeira do Estado do Espírito Santo">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Esp%C3%ADrito_Santo_(estado)" 
+          title="Espírito Santo" 
+          target="_blank" 
+          rel="next">Espírito Santo
+          </a>
+        </td>
+        <td class="num">3.833.486</td>
+        <td class="center">1,89%</td>
+      </tr>
+      <tr>
+        <td class="center">16</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bandeira_de_Mato_Grosso.svg/20px-Bandeira_de_Mato_Grosso.svg.png" 
+          alt="Bandeira do Estado do Mato Grosso">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Mato_Grosso" 
+          title="Mato Grosso" 
+          target="_blank" 
+          rel="next">Mato Grosso
+          </a>
+        </td>
+        <td class="num">3.658.813</td>
+        <td class="center">1,80%</td>
+      </tr>
+
+      <tr>
+        <td class="center">17</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bandeira_do_Rio_Grande_do_Norte.svg/20px-Bandeira_do_Rio_Grande_do_Norte.svg.png" 
+          alt="Bandeira do Estado do Rio Grande do Norte">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Norte" 
+          title="Rio Grande do Norte" 
+          target="_blank" 
+          rel="next">Rio Grande do Norte
+          </a>
+        </td>
+        <td class="num">3.302.406</td>
+        <td class="center">1,63%</td>
+      </tr>
+
+      <tr>
+        <td class="center">18</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/3/33/Bandeira_do_Piau%C3%AD.svg/20px-Bandeira_do_Piau%C3%AD.svg.png" 
+          alt="Bandeira do Estado do Piauí">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Piau%C3%AD" 
+          title="Piauí" 
+          target="_blank" 
+          rel="next">Piauí
+          </a>
+        </td>
+        <td class="num">3.269.200</td>
+        <td class="center">1,61%</td>
+      </tr>
+
+      <tr>
+        <td class="center">19</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bandeira_de_Alagoas.svg/20px-Bandeira_de_Alagoas.svg.png" 
+          alt="Bandeira do Estado de Alagoas">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Alagoas" 
+          title="Alagoas" 
+          target="_blank" 
+          rel="next">Alagoas
+          </a>
+        </td>
+        <td class="num">3.127.511</td>
+        <td class="center">1,54%</td>
+      </tr>
+
+      <tr>
+        <td class="center">20</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Bandeira_do_Distrito_Federal_%28Brasil%29.svg/20px-Bandeira_do_Distrito_Federal_%28Brasil%29.svg.png" 
+          alt="Bandeira do Estado do Distrito Federal">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Distrito_Federal_(Brasil)" 
+          title="Distrito Federal" 
+          target="_blank" 
+          rel="next">Distrito Federal
+          </a>
+        </td>
+        <td class="num">2.817.068</td>
+        <td class="center">1,39%</td>
+      </tr>
+
+      <tr>
+        <td class="center">21</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bandeira_de_Mato_Grosso_do_Sul.svg/20px-Bandeira_de_Mato_Grosso_do_Sul.svg.png" 
+          alt="Bandeira do Estado do Mato Grosso do Sul">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Mato_Grosso_do_Sul" 
+          title="Mato Grosso do Sul" 
+          target="_blank" 
+          rel="next">Mato Grosso do Sul
+          </a>
+        </td>
+        <td class="num">2.756.700</td>
+        <td class="center">1,36%</td>
+      </tr>
+
+      <tr>
+        <td class="center">22</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/b/be/Bandeira_de_Sergipe.svg/20px-Bandeira_de_Sergipe.svg.png" 
+          alt="Bandeira do Estado do Sergipe">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Sergipe" 
+          title="Sergipe" 
+          target="_blank" 
+          rel="next">Sergipe
+          </a>
+        </td>
+        <td class="num">2.209.558</td>
+        <td class="center">1,09%</td>
+      </tr>
+
+      <tr>
+        <td class="center">23</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Bandeira_de_Rond%C3%B4nia.svg/20px-Bandeira_de_Rond%C3%B4nia.svg.png" 
+          alt="Bandeira do Estado de Rondônia">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Rond%C3%B4nia" 
+          title="Rondônia" 
+          target="_blank" 
+          rel="next">Rondônia
+          </a>
+        </td>
+        <td class="num">1.581.016</td>
+        <td class="center">0,78%</td>
+      </tr>
+
+      <tr>
+        <td class="center">24</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bandeira_do_Tocantins.svg/20px-Bandeira_do_Tocantins.svg.png" 
+          alt="Bandeira do Estado de Tocantins">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Tocantins" 
+          title="Tocantins" 
+          target="_blank" 
+          rel="next">Tocantins
+          </a>
+        </td>
+        <td class="num">1.511.459</td>
+        <td class="center">0,74%</td>
+      </tr>
+
+      <tr>
+        <td class="center">25</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Bandeira_do_Acre.svg/20px-Bandeira_do_Acre.svg.png" 
+          alt="Bandeira do Estado do Acre">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Acre" 
+          title="Acre" 
+          target="_blank" 
+          rel="next">Acre
+          </a>
+        </td>
+        <td class="num">830.026</td>
+        <td class="center">0,41%</td>
+      </tr>
+
+      <tr>
+        <td class="center">26</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Bandeira_do_Amap%C3%A1.svg/20px-Bandeira_do_Amap%C3%A1.svg.png" 
+          alt="Bandeira do Estado do Amapá">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Amap%C3%A1" 
+          title="Amapá" 
+          target="_blank" 
+          rel="next">Amapá
+          </a>
+        </td>
+        <td class="num">733.508</td>
+        <td class="center">0,36%</td>
+      </tr>
+
+      <tr>
+        <td class="center">27</td>
+        <td>
+          <img 
+          src="//upload.wikimedia.org/wikipedia/commons/thumb/9/98/Bandeira_de_Roraima.svg/20px-Bandeira_de_Roraima.svg.png" 
+          alt="Bandeira do Estado de Roraima">&nbsp;
+          <a 
+          href="https://pt.wikipedia.org/wiki/Roraima" 
+          title="Roraima" 
+          target="_blank" 
+          rel="next">Roraima
+          </a>
+        </td>
+        <td class="num">636.303	</td>
+        <td class="center">0,31%</td>
+      </tr>
+
+    </tbody>
+    <tfoot>
+      <th class="hab" scope="row">
+        Total de Habitantes
+      </th>
+      <td 
+        class="num"><strong>203.062.512</strong>
+      </td>
+    </tfoot>
+  </table>
+</body>
+</html>
