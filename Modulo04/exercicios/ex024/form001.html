@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+      <!-- 
+        Método GET & POST
+
+        Método get = Usado para dados não sensíveis (nome, idade, endereço, cep...).
+        O get só poderá enviar no máximo 3 mil bytes (aproximadamente 3 mil caracteres).
+        Não é recomendável para o envio de fotos e arquivos.
+
+        Método post = Usado para dados sensíveis (senha, cpf, dados do cartão de crédito...).
+        O post pode ser usado acima de 3 mil bytes (caracteres).
+        Melhor método para envio de arquivos, fotos... 
+
+        Mesmo o post trabalhando com dados sensíveis ainda sim, não é 100% seguro.  
+        Para uma segurança maior dos dados o ideal é trabalhar com HTTPS.   
+      -->
+      <p>
+        <label for="inome">Nome:</label>
+        <input type="text" name="nome" id="inome" />
+      </p>
+      <p>
+        <label for="isobrenome">Sobrenome:</label>
+        <input type="text" name="sobrenome" id="isobrenome" />
+      </p>
+      <p><input type="submit" value="Enviar" /></p>
+    </form>
+  </body>
+</html>
