@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Exemplo de formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+      <fieldset>
+        <!-- fieldset = Grupo de Campos -->
+        <legend>Dados Pessoais</legend>
+        <!-- legend = Dar um nome ao Grupo de Campo -->
+        <p>
+          <label for="inome">Nome: </label>
+          <input
+            type="text"
+            name="nome"
+            id="inome"
+            minlength="4"
+            maxlength="20"
+            autocomplete="name"
+            placeholder="Digite o seu nome"
+            required
+          />
+        </p>
+        <p>
+          <label for="iemail">E-mail: </label>
+          <input
+            type="email"
+            name="email"
+            id="iemail"
+            autocomplete="email"
+            placeholder="Digite o seu e-mail"
+            required
+          />
+        </p>
+        <p>
+          <label for="itel">Telefone: </label>
+          <input
+            type="tel"
+            name="tel"
+            id="itel"
+            autocomplete="tel"
+            pattern="^\(\d{2,3}\)\d{4,5}-\d{4}$"
+            placeholder="(xx)xxxxx-xxxx"
+            required
+          />
+      </fieldset>
+        <!-- 
+          Caso deseje saber mais sobre pattern do telefone fazer uma busca do tipo:
+          (HTML5 telefone pattern).
+
+          pattern = Expressão Regular padrão.
+          Toda Expressão Regular começa com "^" e termina com "$".
+          Para ler dígitos pode se usar "\d ou [0-9]".
+          Para que seja necessário o uso do DDD no cadastro do telefone usa-se (\d{2,3}\),
+          podendo ser DDD (xx) ou DDD (xxx).
+          No corpo do número do telefone pode se usar entre 4 a 5 dígitos, 
+          (5 dígitos se houver um número 9 no começo).
+          E no final do corpo do número usa-se 4 dígitos.
+          OBS: entre o corpo inicial do número e final pode se usar o "-" ou não (opcional).
+          ex: (21)99999-3333 ou (21)999993333.
+
+          Estudar mais sobre RegEx (Expressões Regulares)
+        -->
+      </p>
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+  </body>
+</html>
